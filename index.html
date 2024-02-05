@@ -52,12 +52,29 @@
                         電影評分表
                     </div>
                     <p class="lead mb-5">特別替那個愛看電影的哥哥寫的小網頁</p>
-                    <p>
+                    <!-- <p>
                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
                             評分標準
                           </button>
-                    </p>
-                    <div class="collapse" id="collapseWidthExample">
+                    </p> -->
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              評分標準
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="right" title="故事性" >劇情</a>
+                                    ：星際效應、賽道狂人
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- <div class="collapse" id="collapseWidthExample">
                         <div class="card card-body">
                             <p>
                                 <a href="" data-bs-toggle="tooltip" data-bs-placement="right" title="故事性" >劇情</a>
@@ -69,7 +86,7 @@
                             <p>經典：世界末日、</p>
                             <p>名望：沙丘、克里斯多福·諾蘭</p>
                         </div>
-                    </div>
+                    </div> -->
                     <table class="table table-striped table-hover table-bordered  text-center">
                         <thead class="table-light">
                           <tr>
