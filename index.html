@@ -215,7 +215,7 @@
                         '名望',
                     ],
                     datasets: [{
-                        label: movieName,
+                        // label: movieName,
                         data: getdata(),
                         fill: true,
                         backgroundColor: 'rgb(255,200,87,0.2)',
@@ -233,9 +233,29 @@
                     responsive: true, // 设置图表为响应式，根据屏幕窗口变化而变化
                     maintainAspectRatio: false,// 保持图表原有比例
                     elements: {
-                    line: {
-                        borderWidth: 3 // 设置线条宽度
-                    }
+                        line: {
+                            borderWidth: 3 // 设置线条宽度
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: movieName,
+                            color: 'navy',
+                            position: 'bottom',
+                            align: 'center',
+                            font: {
+                                weight: 'bold'
+                            },
+                            padding: 8,
+                            fullSize: true,                                
+                            font: {
+                                size: 24,
+                            }
+                        }
                     },
                     scales: {
                         r: {
@@ -248,7 +268,8 @@
                             stepSize: 1
                             }
                         }
-                    }
+                    },
+
                 }
                 };
                 if(movieChart){
